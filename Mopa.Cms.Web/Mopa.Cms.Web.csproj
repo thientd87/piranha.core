@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+<!--    <PackageReference Include="Piranha" Version="10.0.0" />
+    <PackageReference Include="Piranha.AspNetCore" Version="10.0.0" />
+    <PackageReference Include="Piranha.AspNetCore.Identity.SQLite" Version="10.0.0" />
+    <PackageReference Include="Piranha.AttributeBuilder" Version="10.0.0" />
+    <PackageReference Include="Piranha.Data.EF.SQLite" Version="10.0.0" />
+    <PackageReference Include="Piranha.ImageSharp" Version="10.0.0" />
+    <PackageReference Include="Piranha.Local.FileStorage" Version="10.0.0" />
+    <PackageReference Include="Piranha.Manager" Version="10.0.0" />
+    <PackageReference Include="Piranha.Manager.LocalAuth" Version="10.0.0" />
+    <PackageReference Include="Piranha.Manager.TinyMCE" Version="10.0.0" />-->
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\core\Piranha\Piranha.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\core\Piranha.AspNetCore\Piranha.AspNetCore.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\identity\Piranha.AspNetCore.Identity.SQLite\Piranha.AspNetCore.Identity.SQLite.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\core\Piranha.ImageSharp\Piranha.ImageSharp.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\core\Piranha.Local.FileStorage\Piranha.Local.FileStorage.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\core\Piranha.Manager\Piranha.Manager.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\core\Piranha.Manager.LocalAuth\Piranha.Manager.LocalAuth.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\core\Piranha.Manager.TinyMCE\Piranha.Manager.TinyMCE.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\core\Piranha.AttributeBuilder\Piranha.AttributeBuilder.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\data\Piranha.Data.EF.SQLite\Piranha.Data.EF.SQLite.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
