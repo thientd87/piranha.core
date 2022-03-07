@@ -51,4 +51,8 @@
     </ProjectReference>
     <ProjectReference Include="..\identity\Piranha.AspNetCore.Identity.SQLServer\Piranha.AspNetCore.Identity.SQLServer.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\Setup\Index.cshtml" />
+  </ItemGroup>
 </Project>
