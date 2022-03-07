@@ -24,6 +24,7 @@
     <ProjectReference Include="..\core\Piranha.AspNetCore\Piranha.AspNetCore.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+    <ProjectReference Include="..\data\Piranha.Data.EF.SQLServer\Piranha.Data.EF.SQLServer.csproj" />
     <ProjectReference Include="..\identity\Piranha.AspNetCore.Identity.SQLite\Piranha.AspNetCore.Identity.SQLite.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
@@ -48,5 +49,6 @@
     <ProjectReference Include="..\data\Piranha.Data.EF.SQLite\Piranha.Data.EF.SQLite.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+    <ProjectReference Include="..\identity\Piranha.AspNetCore.Identity.SQLServer\Piranha.AspNetCore.Identity.SQLServer.csproj" />
   </ItemGroup>
 </Project>

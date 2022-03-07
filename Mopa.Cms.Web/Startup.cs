@@ -7,7 +7,9 @@ using Microsoft.Extensions.Hosting;
 using Piranha;
 using Piranha.AttributeBuilder;
 using Piranha.AspNetCore.Identity.SQLite;
+using Piranha.AspNetCore.Identity.SQLServer;
 using Piranha.Data.EF.SQLite;
+using Piranha.Data.EF.SQLServer;
 using Piranha.Manager.Editor;
 
 namespace Mopa.Cms.Web
@@ -49,8 +51,8 @@ namespace Mopa.Cms.Web
                 options.UseMemoryCache();
 
                 var connectionString = _config.GetConnectionString("piranha");
-                options.UseEF<SQLiteDb>(db => db.UseSqlite(connectionString));
-                options.UseIdentityWithSeed<IdentitySQLiteDb>(db => db.UseSqlite(connectionString));
+                options.UseEF<SQLServerDb>(db => db.UseSqlServer(connectionString));
+                options.UseIdentityWithSeed<IdentitySQLServerDb>(db => db.UseSqlServer(connectionString));
 
                 /**
                  * Here you can configure the different permissions
